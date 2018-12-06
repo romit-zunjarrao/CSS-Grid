@@ -1,0 +1,209 @@
+
+.header {
+            overflow: hidden;
+            background-color: black;
+            padding: 20px 10px;
+        }
+button:hover {
+        transform: rotateX(150deg);
+        transition-delay: 0.2s;}
+footer {overflow: hidden;
+            background-color: black;text-align:right;}
+button {  border-radius: 80%;
+        width: 30%; height: 10vh; font-size: 4vh; overflow: hidden; margin-top: 40px; margin-bottom: 20px;
+        border: 4px solid red; background-color: white; color:black; box-shadow: 5px 10px #888888;;
+        }
+h1 {display: inline-block; font-family: cursive;}
+.header-right {float: right; margin-top: 20px;}
+a { font-size:5vh; margin: 5px; text-decoration: none; color:white; }
+p {font-size: 8vh; 
+            font-family:"Times New Roman", Times, serif; display:inline-block;}  
+ul {
+    line-height: 2;
+    font-size: 3.5vh; 
+   }
+
+html{
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+}
+.item1,.content1,.roll1 {width: 400px; min-width: 300px;}
+.box1 {width:600px;}
+.item1,.content1,.roll1 {height: 400px;}
+.content2, .item2, .roll2 {width:400px; align-self: center; color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;  display: grid; justify-content: center; }
+.box2,.content3, .item3, .roll3 { align-self: center; text-shadow: 0.53px 2px 4px #000000;  display: grid; justify-content: center; }
+body{
+    margin: 5px;
+   background: linear-gradient(rgb(89, 89, 89), rgb(102, 255, 255));
+    line-height: 1.4;
+}
+
+.wrapper{
+    display:grid;
+    grid-gap:20px;
+    margin-top: 20px;
+}
+
+
+   
+/*section 1*/
+
+.section1{
+    display: grid;
+    grid-gap: 20px;
+    background: linear-gradient(rgb(153, 102, 255), rgb(70, 51, 255));
+    grid-template-areas: 
+        'box1 box1 box2';
+}
+
+.box1{
+    background-image: url(fashion1.jpg);
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size:cover;
+    grid-area: box1;
+    background-size:cover;
+    background-position: center;
+      
+}
+
+.box2{
+   
+    grid-area:box2;
+}
+
+
+
+
+
+/*section2*/
+
+
+
+.section2{
+    display: grid;
+    grid-gap: 20px;
+    background: linear-gradient(to right,rgb(194, 194, 214), rgb(61, 61, 92));
+    grid-template-areas: 
+        'item1 . .';
+}
+
+.item1{
+    background-image: url(fitness.jpeg);
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size:cover;
+    background-position: center;
+    grid-area: item1;
+
+}
+
+/*section3*/
+
+.section3{
+      display: grid;
+    grid-gap: 20px;
+    background: linear-gradient(to right,rgb(61, 61, 92), rgb(194, 194, 214));
+    grid-template-areas: 
+        'content1 . .';
+}
+
+.content1{
+     background-image: url(waterproof.jpg);
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size:cover;
+    background-position: center;
+    grid-area: content1;
+}
+/*section4*/
+.roll1{
+     background-image: url(weather.jpg);
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size:cover;
+    background-position: center;
+    grid-area: roll1;
+}
+
+
+.section4{
+      display: grid;
+    grid-gap: 20px;
+    background: linear-gradient(to right,rgb(194, 194, 214), rgb(61, 61, 92));
+    grid-template-areas: 
+        'roll1 . .';
+}
+
+
+img{
+    width:100%;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px){
+    .header-right {float: none;}
+    a {font-size:3vh;}
+    body {margin: 0px;}
+    .section1{
+        grid-template-areas: 'box1'
+                             'box2';
+    }
+    .box1,.item1,.content1,.roll1 {width: 100%;}
+    .content2, .item2, .roll2 {width:100%;}
+
+    img{
+        width:200px;
+    }
+
+    .section2{
+        grid-template-areas: 'item1';
+    }
+
+
+     .section3{
+        grid-template-areas: 'content1';
+    }
+
+     .section4{
+        grid-template-areas: 'roll1';
+    }
+
+   
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .header-right {float:none;}
+    a {font-size:3vh;}
+    body {margin: 0px;}
+    .section1{
+        grid-template-areas: 'box1'
+                             'box2';
+    }
+    .box1,.item1,.content1,.roll1 {width: 100%;}
+    .content2, .item2, .roll2 {width:100%;}
+
+    img{
+        width:200px;
+    }
+
+    .section2{
+        grid-template-areas: 'item1';
+    }
+
+
+     .section3{
+        grid-template-areas: 'content1';
+    }
+
+     .section4{
+        grid-template-areas: 'roll1';
+    }
+
+   
+    
+}
